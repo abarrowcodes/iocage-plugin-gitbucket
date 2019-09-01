@@ -1,5 +1,7 @@
 #!/bin/sh
 
+rm -rf /usr/local/apache-tomcat-9.0/webapps/*
+
 fetch -o /usr/local/apache-tomcat-9.0/webapps/ROOT.war https://github.com/gitbucket/gitbucket/releases/download/4.32.0/gitbucket.war
 
 mkdir -p /var/gitbucket
